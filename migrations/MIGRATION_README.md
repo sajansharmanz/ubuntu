@@ -54,7 +54,7 @@ chmod +x 004-my-migration.sh
 ```bash
 #!/bin/bash
 # Example migration: add a new config file
-cp "$SAJANS_PATH/config/default.conf" "$HOME/.config/sajans/config.conf"
+cp "$SAJANS_UBUNTU_PATH/config/default.conf" "$HOME/.config/sajans.ubuntu/config.conf"
 ```
 
 4. Commit the migration to Git. After a `git pull`, the migration runner will automatically execute it if it has not already run.
@@ -81,7 +81,7 @@ echo "Running migration 004-my-migration.sh"
 
 # Example commands:
 # Copy configuration file
-cp "$SAJANS_PATH/config/default.conf" "$HOME/.config/sajans/config.conf"
+cp "$SAJANS_UBUNTU_PATH/config/default.conf" "$HOME/.config/sajans.ubuntu/config.conf"
 
 # Additional commands here
 ```
