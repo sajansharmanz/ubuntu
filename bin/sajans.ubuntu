@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source ~/.bashrc
+source $SAJANS_UBUNTU_PATH/bin/sajans.ubuntu-sub/header.sh
+source $SAJANS_UBUNTU_PATH/bin/sajans.ubuntu-sub/menu.sh

@@ -1,0 +1,5 @@
+source ~/.local/share/sajans.ubuntu/defaults/bash/shell
+source ~/.local/share/sajans.ubuntu/defaults/bash/aliases
+source ~/.local/share/sajans.ubuntu/defaults/bash/functions
+source ~/.local/share/sajans.ubuntu/defaults/bash/prompt
+source ~/.local/share/sajans.ubuntu/defaults/bash/init

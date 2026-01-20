@@ -1,0 +1,5 @@
+include "%H/.local/share/sajans.ubuntu/defaults/xcompose"
+
+# Identification
+<Multi_key> <space> <n> : "$SAJANS_UBUNTU_USER_NAME"
+<Multi_key> <space> <e> : "$SAJANS_UBUNTU_USER_EMAIL"

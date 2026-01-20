@@ -1,0 +1,75 @@
+{
+  // --------------------------------------------------------------------------
+  // Core Editor Functionality
+  // These settings control fundamental editor behavior, such as file handling and text editing.
+  // --------------------------------------------------------------------------
+  "editor.tabSize": 2,
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.tabCompletion": "on",
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.selectionHighlight": true,
+  "editor.occurrencesHighlight": "singleFile",
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "editor.lineNumbers": "off",
+  "editor.guides.indentation": true,
+  "breadcrumbs.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "window.titleBarStyle": "custom",
+  "editor.overviewRulerBorder": false,
+
+  // --------------------------------------------------------------------------
+  // Editor & Workbench Appearance
+  // These settings affect the visual look and feel of the entire VS Code application.
+  // --------------------------------------------------------------------------
+  "workbench.colorTheme": "Pitch Black",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Ubuntu Sans Mono",
+  "editor.fontSize": 16,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "chat.commandCenter.enabled": false,
+  "update.showReleaseNotes": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground": "#333"
+  }
+
+  // --------------------------------------------------------------------------
+  // File Explorer
+  // Settings related to the file explorer and file-system interaction.
+  // --------------------------------------------------------------------------
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "workbench.tree.renderIndentGuides": "none",
+
+  // --------------------------------------------------------------------------
+  // Git Integration
+  // Settings for VS Code's built-in Git integration.
+  // --------------------------------------------------------------------------
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.ignoreMissingGitWarning": true,
+  "git.openRepositoryInParentFolders": "always",
+
+  // --------------------------------------------------------------------------
+  // Miscellaneous & Telemetry
+  // Settings for security, extensions, and other general functionalities.
+  // --------------------------------------------------------------------------
+  "security.workspace.trust.untrustedFiles": "open",
+  "extensions.ignoreRecommendations": true
+}

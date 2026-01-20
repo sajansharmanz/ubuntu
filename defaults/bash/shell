@@ -1,0 +1,19 @@
+# History control
+shopt -s histappend
+HISTCONTROL=ignoreboth
+HISTSIZE=32768
+HISTFILESIZE="${HISTSIZE}"
+
+# Autocompletion
+source /usr/share/bash-completion/bash_completion
+
+# Set complete path
+export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/sajans.ubuntu/bin:$PATH"
+set +h
+
+export SAJANS_UBUNTU_PATH="/home/$USER/.local/share/sajans.ubuntu"
+
+export ANDROID_HOME=/usr/lib/android-sdk
+export ANDROID_SDK_ROOT=/usr/lib/android-sdk
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
