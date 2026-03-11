@@ -132,3 +132,23 @@ npm() {
     command npm "$@"
   fi
 }
+
+# Allow easy swapping between ssh keys
+usekey() {
+  local key="$1"
+
+  if [ -z "$key" ]; then
+    echo "Usage: usekey [keyname]"
+    return 1
+  fi
+
+  ssh-add -D >/dev/null 2>&1
+
+  if ssh-add ~/.ssh/"$key" >/dev/null 2>&1; then
+    echo "Now using SSH key: $key"
+  else
+    echo "Key ~/.ssh/$key not found"
+  fi
+
+  ssh-add -l
+}
