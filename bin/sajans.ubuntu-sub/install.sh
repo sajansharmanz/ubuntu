@@ -6,6 +6,7 @@ CHOICES=(
   "Remmina           Install Remmina"
   "Spotify           Install Spotify"
   "WhatsApp          Install WhatsApp"
+  "Signal            Install Signal"
   "Youtube Music     Install Youtube Music"
   "> All             Re-run any of the default installers"
   "<< Back           "

@@ -7,6 +7,7 @@ if [[ "$DESKTOP" == *"GNOME"* ]]; then
   OPTIONAL_APPS=(
     "Postman"
     "Whatsapp"
+    "Signal"
     "Spotify"
     "LibreOffice"
     "Remmina"

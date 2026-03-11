@@ -17,6 +17,7 @@ optional_after_code=(
     "postman_postman.desktop"
     "spotify.desktop"
     "WhatsApp.desktop"
+    "signal-desktop.desktop"
     "YoutubeMusic.desktop"
     "Notion.desktop"
 )
