@@ -31,7 +31,7 @@
   // --------------------------------------------------------------------------
   "workbench.colorTheme": "Pitch Black",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Ubuntu Sans Mono",
+  "editor.fontFamily": "Hack Nerd Font Mono, Hack Nerd Font, monospace",
   "editor.fontSize": 16,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
