@@ -142,6 +142,11 @@ usekey() {
     return 1
   fi
 
+  # Start ssh-agent if it's not running
+  if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)" >/dev/null
+  fi
+
   ssh-add -D >/dev/null 2>&1
 
   if ssh-add ~/.ssh/"$key" >/dev/null 2>&1; then
