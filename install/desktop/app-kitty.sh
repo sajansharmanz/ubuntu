@@ -22,24 +22,19 @@ ln -sf ~/.local/kitty.app/bin/kitty ~/.local/bin/kitty
 ln -sf ~/.local/kitty.app/bin/kitten ~/.local/bin/kitten
 
 # --- Desktop integration ---
-# Installs the .desktop file + icons for the current user so Kitty appears in the
-# app grid, is launchable, and can be pinned to the dock.
+# Install .desktop files + icons so Kitty appears in the app grid.
 # See https://sw.kovidgoyal.net/kitty/binary/#desktop-integration
-~/.local/kitty.app/bin/kitty + runpy "from kitty.install import install_desktop_files_for; install_desktop_files_for('~/.local')"
-
-# Register Kitty as a default terminal emulator (x-scheme-handler/terminal)
 mkdir -p ~/.local/share/applications
-if [ -f ~/.local/share/applications/kitty.desktop ]; then
-    if ! grep -q "x-scheme-handler/terminal" ~/.local/share/applications/kitty.desktop; then
-        echo "X-GNOME-MimeType=x-scheme-handler/terminal;" >> ~/.local/share/applications/kitty.desktop
-    fi
-    update-desktop-database ~/.local/share/applications 2>/dev/null || true
-fi
+cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/
+cp ~/.local/kitty.app/share/applications/kitty-open.desktop ~/.local/share/applications/
 
-# Make Kitty the default terminal for the desktop environment
-if command -v gsettings >/dev/null 2>&1; then
-    gsettings set org.gnome.desktop.default-applications.terminal exec kitty 2>/dev/null || true
-fi
+# Update the Icon and Exec paths in the .desktop files to point to the kitty install
+sed -i "s|Icon=kitty|Icon=$(readlink -f ~)/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g" ~/.local/share/applications/kitty*.desktop
+sed -i "s|Exec=kitty|Exec=$(readlink -f ~)/.local/kitty.app/bin/kitty|g" ~/.local/share/applications/kitty*.desktop
+
+# Make xdg-terminal-exec (and desktop environments that support it) use Kitty
+mkdir -p ~/.config
+echo 'kitty.desktop' > ~/.config/xdg-terminals.list
 
 # --- Apply the monochrome Kitty config on a fresh install ---
 # So the terminal is themed (monochrome) without the user having to run the
