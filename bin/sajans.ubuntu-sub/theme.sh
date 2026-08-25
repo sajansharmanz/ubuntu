@@ -14,6 +14,7 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   source $SAJANS_UBUNTU_PATH/themes/$THEME/gnome.sh
   source $SAJANS_UBUNTU_PATH/themes/$THEME/tophat.sh
   source $SAJANS_UBUNTU_PATH/themes/$THEME/vscode.sh
+  source $SAJANS_UBUNTU_PATH/themes/$THEME/kitty.sh
 fi
 
 source $SAJANS_UBUNTU_PATH/bin/sajans.ubuntu-sub/menu.sh

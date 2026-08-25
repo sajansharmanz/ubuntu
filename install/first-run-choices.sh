@@ -12,7 +12,7 @@ if [[ "$DESKTOP" == *"GNOME"* ]]; then
     "LibreOffice"
     "Remmina"
     "Youtube Music"
-    "Notion"
+    "Hermes Agent"
   )
 
   DEFAULT_OPTIONAL_APPS=""
