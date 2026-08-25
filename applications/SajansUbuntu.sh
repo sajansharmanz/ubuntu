@@ -5,7 +5,7 @@ cat <<EOF >~/.local/share/applications/SajansUbuntu.desktop
 Version=1.0
 Name=Sajans Ubuntu
 Comment=Ubuntu Controls
-Exec=terminator -m -x sajans.ubuntu
+Exec=kitty -e sajans.ubuntu
 Terminal=false
 Type=Application
 Icon=/home/$USER/.local/share/sajans.ubuntu/applications/icons/Sajan.png

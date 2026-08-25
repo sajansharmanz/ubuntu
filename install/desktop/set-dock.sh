@@ -3,8 +3,9 @@
 # Favorite apps for dock
 apps=(
     "google-chrome.desktop"
-    "terminator.desktop"
+    'kitty.desktop'
     "code.desktop"
+    'obsidian.desktop'
     "Activity.desktop"
     "Docker.desktop"
     "SajansUbuntu.desktop"
@@ -19,7 +20,10 @@ optional_after_code=(
     "WhatsApp.desktop"
     "signal-desktop.desktop"
     "YoutubeMusic.desktop"
-    "Notion.desktop"
+    "syncthing-gtk.desktop"
+    "syncthing.desktop"
+    "copyq.desktop"
+    "hermes.desktop"
 )
 
 # Array to hold installed favorite apps
